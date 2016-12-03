@@ -14,6 +14,7 @@ public class ConnexionOfficerServlet extends HttpServlet {
         /*
          * À la réception d'une requête GET, simple affichage du formulaire
          */
+        int a;
         this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
     }
 
