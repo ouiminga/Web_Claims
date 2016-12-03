@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	
+    <servlet>
+        <servlet-name>CreationClaimServlet</servlet-name>
+        <servlet-class>org.bank.controller.CreationClaimServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreationClaimServlet</servlet-name>
+        <url-pattern>/createclaim</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CreationBankServlet</servlet-name>
+        <servlet-class>org.bank.controller.CreationBankServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreationBankServlet</servlet-name>
+        <url-pattern>/createbank</url-pattern>
+    </servlet-mapping>
+    
+	<servlet>
+		<servlet-name>CreationClientServlet</servlet-name>
+		<servlet-class>org.bank.controller.CreationClientServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreationClientServlet</servlet-name>
+		<url-pattern>/createclient</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CreationOfficerServlet</servlet-name>
+		<servlet-class>org.bank.controller.CreationOfficerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreationOfficerServlet</servlet-name>
+		<url-pattern>/createofficer</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+        <servlet-name>ShowBankServlet</servlet-name>
+        <servlet-class>org.bank.controller.ShowBankServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowBankServlet</servlet-name>
+        <url-pattern>/showbank</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ShowClaimServlet</servlet-name>
+        <servlet-class>org.bank.controller.ShowClaimServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowClaimServlet</servlet-name>
+        <url-pattern>/showclaim</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ShowClientServlet</servlet-name>
+        <servlet-class>org.bank.controller.ShowClientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowOfficerServlet</servlet-name>
+        <url-pattern>/showclient</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ShowOfficerServlet</servlet-name>
+        <servlet-class>org.bank.controller.ShowOfficerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowOfficerServlet</servlet-name>
+        <url-pattern>/showofficer</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ConnexionOfficerServlet</servlet-name>
+        <servlet-class>org.bank.controller.ConnexionOfficerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConnexionOfficerServlet</servlet-name>
+        <url-pattern>/connexionofficer</url-pattern>
+    </servlet-mapping>
+</web-app>
