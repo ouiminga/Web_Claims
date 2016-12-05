@@ -7,7 +7,7 @@
 <%@ page import="java.util.Map"%>
 <!DOCTYPE html>
 <html>
-<head>
+<head>s
 <meta charset="utf-8" />
 <title>Creation d'un client</title>
 <link type="text/css" rel="stylesheet" href="form.css" />
@@ -15,7 +15,6 @@
 <body>
 	<%@ include file="/inc/menuCreation.jsp"%>
 	<form method="post" action="<c:url value="/showclient"/>">
-
 		<fieldset>
 			<%-- include file="/WEB-INF/createActor.jspf"--%>
 

@@ -56,8 +56,9 @@ public final class CreationOfficerForm {
             setErreur( CHAMP_CONF, null );
         }
         officer.setPass( mdp );
+
         try {
-            validationBank( pseudo );
+            validationPseudo( pseudo );
         } catch ( Exception e ) {
             setErreur( CHAMP_PSEUDO, e.getMessage() );
         }
@@ -185,8 +186,18 @@ public final class CreationOfficerForm {
      * Valide le nom d'officer saisi.
      */
     private void validationName( String name ) throws Exception {
-        if ( name != null && name.trim().length() < 3 ) {
-            throw new Exception( "Le nom doit contenir au moins 3 caractères." );
+        if ( name != null && name.trim().length() != 0 && name.trim().length() < 3 ) {
+            throw new Exception( "Merci de saisir un nom valide." );
+        } else {
+            throw new Exception( "Merci de saisir un nom." );
+        }
+    }
+
+    private void validationPseudo( String pseudo ) throws Exception {
+        if ( pseudo != null && pseudo.trim().length() != 0 && pseudo.trim().length() < 3 ) {
+            throw new Exception( "Merci de saisir un pseudo valide." );
+        } else {
+            throw new Exception( "Merci de saisir un pseudo." );
         }
     }
 

@@ -39,9 +39,11 @@
 		<servlet-name>CreationOfficerServlet</servlet-name>
 		<url-pattern>/createofficer</url-pattern>
 	</servlet-mapping>
-	
-	
-	
+	 <servlet-mapping>
+        <servlet-name>CreationOfficerServlet</servlet-name>
+        <url-pattern>/showofficer</url-pattern>
+    </servlet-mapping>
+
 	<servlet>
         <servlet-name>ShowBankServlet</servlet-name>
         <servlet-class>org.bank.controller.ShowBankServlet</servlet-class>
@@ -65,18 +67,14 @@
         <servlet-class>org.bank.controller.ShowClientServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ShowOfficerServlet</servlet-name>
+        <servlet-name>ShowClientServlet</servlet-name>
         <url-pattern>/showclient</url-pattern>
     </servlet-mapping>
     
     <servlet>
         <servlet-name>ShowOfficerServlet</servlet-name>
         <servlet-class>org.bank.controller.ShowOfficerServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ShowOfficerServlet</servlet-name>
-        <url-pattern>/showofficer</url-pattern>
-    </servlet-mapping>
+    </servlet> 
     
     <servlet>
         <servlet-name>ConnexionOfficerServlet</servlet-name>
