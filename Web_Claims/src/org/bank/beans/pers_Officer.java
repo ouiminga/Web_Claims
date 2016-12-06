@@ -12,21 +12,21 @@ public class pers_Officer extends pers_Actor {
     private static long nbrOfficer;
 
     private long        numOfficer;
-    private Bank        officerOfBank;
+    private Bank        officerOf;
 
     /**
-     * @return the officerOfBank
+     * @return the officerOf
      */
-    public Bank getOfficerOfBank() {
-        return officerOfBank;
+    public Bank getOfficerOf() {
+        return officerOf;
     }
 
     /**
-     * @param officerOfBank
-     *            the officerOfBank to set
+     * @param officerOf
+     *            the officerOf to set
      */
-    public void setOfficerOfBank( Bank officerOfBank ) {
-        this.officerOfBank = officerOfBank;
+    public void setOfficerOf( Bank officerOf ) {
+        this.officerOf = officerOf;
     }
 
     /**

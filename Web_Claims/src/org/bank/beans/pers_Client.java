@@ -38,15 +38,15 @@ public class pers_Client extends pers_Actor {
 	/**
 	 * @return the customerOf
 	 */
-	public Bank getCustomerOfBank() {
+	public Bank getCustomerOf() {
 		return customerOf;
 	}
 
 	/**
 	 * @param customerOf the customerOf to set
 	 */
-	public void setCustomerOfBank(Bank customerOfBank) {
-		this.customerOf = customerOfBank;
+	public void setCustomerOf(Bank customerOf) {
+		this.customerOf = customerOf;
 	}
 
 	/**

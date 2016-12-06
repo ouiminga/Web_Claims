@@ -98,7 +98,7 @@ public final class CreationClientForm {
         } catch ( Exception e ) {
             setErreur( CHAMP_CUSTOMEROF, e.getMessage() );
         }
-        client.setCustomerOfBank( bank );
+        client.setCustomerOf( bank );
 
         if ( erreurs.isEmpty() ) {
             resultat = "Succès de l'inscription.";

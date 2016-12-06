@@ -99,7 +99,7 @@ public final class CreationOfficerForm {
         } catch ( Exception e ) {
             setErreur( CHAMP_OFFICEROF, e.getMessage() );
         }
-        officer.setOfficerOfBank( bank );
+        officer.setOfficerOf( bank );
 
         if ( erreurs.isEmpty() ) {
             resultat = "Succès de l'inscription.";
