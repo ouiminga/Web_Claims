@@ -20,11 +20,14 @@ public class CreationOfficerServlet extends HttpServlet {
         /*
          * À la réception d'une requête GET, simple affichage du formulaire
          */
+        request.setAttribute( "type_request", "get" );
         this.getServletContext().getRequestDispatcher( VUE_FORM ).forward( request, response );
     }
 
     public void doPost( HttpServletRequest request, HttpServletResponse response )
             throws ServletException, IOException {
+        request.setAttribute( "type_request", "post" );
+
         /* Préparation de l'objet formulaire */
         CreationOfficerForm officerform = new CreationOfficerForm();
         /*
