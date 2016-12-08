@@ -31,30 +31,28 @@
 			    int maxlength1 = 30, maxlength2 = 40, maxlength3 = 50, maxlength4 = 60;
 			    CreationOfficerForm form = (CreationOfficerForm) request.getAttribute( "officerform" );
 			    pers_Officer officerof = (pers_Officer) request.getAttribute( "officerof" );
-			    Map<String, String[]>a = request.getParameterMap(  );
-			    //remplacer les get attributes par des get param
-			    if(a.isEmpty(  ))
-			        System.out.println( "vide  ----" );
-			    if ( request.getAttribute( "type_request" ).equals( "post" ) ) {
-			        if ( !form.getErreurs().get( "email" ).isEmpty() )
-			            erreur_email = form.getErreurs().get( "email" );
-			        if ( !form.getErreurs().get( "mdp" ).isEmpty() )
-			            erreur_mdp = form.getErreurs().get( "mdp" );
-			        if ( !form.getErreurs().get( "confirmation" ).isEmpty() )
-			            erreur_confirmation = form.getErreurs().get( "confirmation" );
-			        if ( !form.getErreurs().get( "pseudo" ).isEmpty() )
-			            erreur_pseudo = form.getErreurs().get( "pseudo" );
-			        if ( !form.getErreurs().get( "name" ).isEmpty() )
-			            erreur_name = form.getErreurs().get( "name" );
-			        if ( !form.getErreurs().get( "firstname" ).isEmpty() )
-			            erreur_firstname = form.getErreurs().get( "firstname" );
-			        if ( !form.getErreurs().get( "phone" ).isEmpty() )
-			            erreur_phone = form.getErreurs().get( "phone" );
-			        if ( !form.getErreurs().get( "adress" ).isEmpty() )
-			            erreur_adress = form.getErreurs().get( "adress" );
-			        if ( !form.getErreurs().get( "officerof" ).isEmpty() )
-			            erreur_officerof = form.getErreurs().get( "officerof" );
-			    }
+			    Map<String, String[]> parmaMap = request.getParameterMap(  );
+			    System.out.println( " attributes -----" + request.getAttribute( "email" ) + " finnnn") ;
+// 			    if ( request.getAttribute( "type_request" ).equals( "post" ) ) {
+// 			        if ( !form.getErreurs().get( "email" ).isEmpty() )
+// 			            erreur_email = form.getErreurs().get( "email" );
+// 			        if ( !form.getErreurs().get( "mdp" ).isEmpty() )
+// 			            erreur_mdp = form.getErreurs().get( "mdp" );
+// 			        if ( !form.getErreurs().get( "confirmation" ).isEmpty() )
+// 			            erreur_confirmation = form.getErreurs().get( "confirmation" );
+// 			        if ( !form.getErreurs().get( "pseudo" ).isEmpty() )
+// 			            erreur_pseudo = form.getErreurs().get( "pseudo" );
+// 			        if ( !form.getErreurs().get( "name" ).isEmpty() )
+// 			            erreur_name = form.getErreurs().get( "name" );
+// 			        if ( !form.getErreurs().get( "firstname" ).isEmpty() )
+// 			            erreur_firstname = form.getErreurs().get( "firstname" );
+// 			        if ( !form.getErreurs().get( "phone" ).isEmpty() )
+// 			            erreur_phone = form.getErreurs().get( "phone" );
+// 			        if ( !form.getErreurs().get( "adress" ).isEmpty() )
+// 			            erreur_adress = form.getErreurs().get( "adress" );
+// 			        if ( !form.getErreurs().get( "officerof" ).isEmpty() )
+// 			            erreur_officerof = form.getErreurs().get( "officerof" );
+// 			    }
 			%>
 			<legend>Inscription</legend>
 			<p>Vous pouvez vous inscrire via ce formulaire.</p>
